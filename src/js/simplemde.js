@@ -1070,58 +1070,58 @@ var toolbarBuiltInButtons = {
 	"bold": {
 		name: "bold",
 		action: toggleBold,
-		className: "fa fa-bold",
+		className: "icon icon-bold",
 		title: "Bold",
 		default: true
 	},
 	"italic": {
 		name: "italic",
 		action: toggleItalic,
-		className: "fa fa-italic",
+		className: "icon icon-italic",
 		title: "Italic",
 		default: true
 	},
 	"strikethrough": {
 		name: "strikethrough",
 		action: toggleStrikethrough,
-		className: "fa fa-strikethrough",
+		className: "icon icon-strikethrough",
 		title: "Strikethrough"
 	},
 	"heading": {
 		name: "heading",
 		action: toggleHeadingSmaller,
-		className: "fa fa-header",
+		className: "icon icon-header",
 		title: "Heading",
 		default: true
 	},
 	"heading-smaller": {
 		name: "heading-smaller",
 		action: toggleHeadingSmaller,
-		className: "fa fa-header fa-header-x fa-header-smaller",
+		className: "icon icon-header icon-header-x icon-header-smaller",
 		title: "Smaller Heading"
 	},
 	"heading-bigger": {
 		name: "heading-bigger",
 		action: toggleHeadingBigger,
-		className: "fa fa-header fa-header-x fa-header-bigger",
+		className: "icon icon-header icon-header-x icon-header-bigger",
 		title: "Bigger Heading"
 	},
 	"heading-1": {
 		name: "heading-1",
 		action: toggleHeading1,
-		className: "fa fa-header fa-header-x fa-header-1",
+		className: "icon icon-header icon-header-x icon-header-1",
 		title: "Big Heading"
 	},
 	"heading-2": {
 		name: "heading-2",
 		action: toggleHeading2,
-		className: "fa fa-header fa-header-x fa-header-2",
+		className: "icon icon-header icon-header-x icon-header-2",
 		title: "Medium Heading"
 	},
 	"heading-3": {
 		name: "heading-3",
 		action: toggleHeading3,
-		className: "fa fa-header fa-header-x fa-header-3",
+		className: "icon icon-header icon-header-x icon-header-3",
 		title: "Small Heading"
 	},
 	"separator-1": {
@@ -1130,34 +1130,34 @@ var toolbarBuiltInButtons = {
 	"code": {
 		name: "code",
 		action: toggleCodeBlock,
-		className: "fa fa-code",
+		className: "icon icon-code",
 		title: "Code"
 	},
 	"quote": {
 		name: "quote",
 		action: toggleBlockquote,
-		className: "fa fa-quote-left",
+		className: "icon icon-quote-left",
 		title: "Quote",
 		default: true
 	},
 	"unordered-list": {
 		name: "unordered-list",
 		action: toggleUnorderedList,
-		className: "fa fa-list-ul",
+		className: "icon icon-list-ul",
 		title: "Generic List",
 		default: true
 	},
 	"ordered-list": {
 		name: "ordered-list",
 		action: toggleOrderedList,
-		className: "fa fa-list-ol",
+		className: "icon icon-list-ol",
 		title: "Numbered List",
 		default: true
 	},
 	"clean-block": {
 		name: "clean-block",
 		action: cleanBlock,
-		className: "fa fa-eraser fa-clean-block",
+		className: "icon icon-eraser fa-clean-block",
 		title: "Clean block"
 	},
 	"separator-2": {
@@ -1166,27 +1166,27 @@ var toolbarBuiltInButtons = {
 	"link": {
 		name: "link",
 		action: drawLink,
-		className: "fa fa-link",
+		className: "icon icon-link",
 		title: "Create Link",
 		default: true
 	},
 	"image": {
 		name: "image",
 		action: drawImage,
-		className: "fa fa-picture-o",
+		className: "icon icon-picture",
 		title: "Insert Image",
 		default: true
 	},
 	"table": {
 		name: "table",
 		action: drawTable,
-		className: "fa fa-table",
+		className: "icon icon-table",
 		title: "Insert Table"
 	},
 	"horizontal-rule": {
 		name: "horizontal-rule",
 		action: drawHorizontalRule,
-		className: "fa fa-minus",
+		className: "icon icon-minus",
 		title: "Insert Horizontal Line"
 	},
 	"separator-3": {
@@ -1195,21 +1195,21 @@ var toolbarBuiltInButtons = {
 	"preview": {
 		name: "preview",
 		action: togglePreview,
-		className: "fa fa-eye no-disable",
+		className: "icon icon-eye-open no-disable",
 		title: "Toggle Preview",
 		default: true
 	},
 	"side-by-side": {
 		name: "side-by-side",
 		action: toggleSideBySide,
-		className: "fa fa-columns no-disable no-mobile",
+		className: "icon icon-columns no-disable no-mobile",
 		title: "Toggle Side by Side",
 		default: true
 	},
 	"fullscreen": {
 		name: "fullscreen",
 		action: toggleFullScreen,
-		className: "fa fa-arrows-alt no-disable no-mobile",
+		className: "icon icon-expand-full no-disable no-mobile",
 		title: "Toggle Fullscreen",
 		default: true
 	},
@@ -1219,7 +1219,7 @@ var toolbarBuiltInButtons = {
 	"guide": {
 		name: "guide",
 		action: "https://simplemde.com/markdown-guide",
-		className: "fa fa-question-circle",
+		className: "icon icon-question-sign",
 		title: "Markdown Guide",
 		default: true
 	},
@@ -1229,13 +1229,13 @@ var toolbarBuiltInButtons = {
 	"undo": {
 		name: "undo",
 		action: undo,
-		className: "fa fa-undo no-disable",
+		className: "icon icon-undo no-disable",
 		title: "Undo"
 	},
 	"redo": {
 		name: "redo",
 		action: redo,
-		className: "fa fa-repeat no-disable",
+		className: "icon icon-repeat no-disable",
 		title: "Redo"
 	}
 };

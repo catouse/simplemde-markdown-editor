@@ -2,8 +2,6 @@
     height: auto;
     min-height: 300px;
     border: 1px solid #ddd;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
     padding: 10px;
     font: inherit;
     z-index: 1;
@@ -16,7 +14,7 @@
 .CodeMirror-fullscreen {
     background: #fff;
     position: fixed !important;
-    top: 50px;
+    top: 30px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -29,52 +27,34 @@
 }
 
 .editor-toolbar {
+    background: #fafafa;
     position: relative;
-    opacity: .6;
+    opacity: .9;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    padding: 0 10px;
-    border-top: 1px solid #bbb;
-    border-left: 1px solid #bbb;
-    border-right: 1px solid #bbb;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.editor-toolbar:after,
-.editor-toolbar:before {
-    display: block;
-    content: ' ';
-    height: 1px;
-}
-
-.editor-toolbar:before {
-    margin-bottom: 8px
-}
-
-.editor-toolbar:after {
-    margin-top: 8px
+    padding: 1px 1px 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 .editor-toolbar:hover,
 .editor-wrapper input.title:focus,
 .editor-wrapper input.title:hover {
-    opacity: .8
+    opacity: 1
 }
 
 .editor-toolbar.fullscreen {
     width: 100%;
-    height: 50px;
+    height: 30px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
     box-sizing: border-box;
-    background: #fff;
+    background: #fafafa;
     border: 0;
     position: fixed;
     top: 0;
@@ -119,23 +99,27 @@
     display: inline-block;
     text-align: center;
     text-decoration: none!important;
-    color: #2c3e50!important;
-    width: 30px;
-    height: 30px;
-    margin: 0;
+    color: #333!important;
+    min-width: 24px;
+    height: 24px;
+    margin: 1px;
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 1px;
     cursor: pointer;
 }
 
 .editor-toolbar a.active,
 .editor-toolbar a:hover {
-    background: #fcfcfc;
-    border-color: #95a5a6;
+    background-color: #fff5d4;
+    border-color: #dcac6c;
+}
+
+.editor-toolbar a.active {
+    background-color: #ffe69f;
 }
 
 .editor-toolbar a:before {
-    line-height: 30px
+    line-height: 24px
 }
 
 .editor-toolbar i.separator {
@@ -146,9 +130,11 @@
     color: transparent;
     text-indent: -10px;
     margin: 0 6px;
+    position: relative;
+    top: -2px;
 }
 
-.editor-toolbar a.fa-header-x:after {
+.editor-toolbar a.icon-header-x:after {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 65%;
     vertical-align: text-bottom;
@@ -156,23 +142,23 @@
     top: 2px;
 }
 
-.editor-toolbar a.fa-header-1:after {
+.editor-toolbar a.icon-header-1:after {
     content: "1";
 }
 
-.editor-toolbar a.fa-header-2:after {
+.editor-toolbar a.icon-header-2:after {
     content: "2";
 }
 
-.editor-toolbar a.fa-header-3:after {
+.editor-toolbar a.icon-header-3:after {
     content: "3";
 }
 
-.editor-toolbar a.fa-header-bigger:after {
+.editor-toolbar a.icon-header-bigger:after {
     content: "▲";
 }
 
-.editor-toolbar a.fa-header-smaller:after {
+.editor-toolbar a.icon-header-smaller:after {
     content: "▼";
 }
 
@@ -181,6 +167,7 @@
     background: #fff;
     border-color: transparent;
     text-shadow: inherit;
+    opacity: .5;
 }
 
 @media only screen and (max-width: 700px) {
@@ -233,7 +220,7 @@
     position: fixed;
     bottom: 0;
     width: 50%;
-    top: 50px;
+    top: 30px;
     right: 0;
     background: #fafafa;
     z-index: 9;
