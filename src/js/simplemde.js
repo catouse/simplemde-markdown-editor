@@ -1392,7 +1392,12 @@ function SimpleMDE(options) {
 SimpleMDE.prototype.markdown = function(text) {
 	if(marked) {
 		// Initialize
-		var markedOptions = {};
+		var markedOptions;
+		if(this.options && this.options.renderingConfig && this.options.renderingConfig.markedOptions) {
+			markedOptions = this.options.renderingConfig.markedOptions;
+		} else {
+			markedOptions = {};
+		}
 
 
 		// Update options
